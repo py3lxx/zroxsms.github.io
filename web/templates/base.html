@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zrox SMS - Güvenli ve Anonim SMS Bomber</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='icon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="particles-container" id="particles-js"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="code-text">&lt;</span>
+                Zrox SMS
+                <span class="code-text">/&gt;</span>
+            </div>
+            <div class="nav-links">
+                <a href="/">Ana Sayfa</a>
+                <a href="/forum">Forum</a>
+                <a href="#contact">İletişim</a>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>&copy; 2024 Zrox SMS. Tüm hakları saklıdır.</p>
+        <p>%100 Python ile geliştirilmiştir.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
