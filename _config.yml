@@ -1,0 +1,5 @@
+title: Zrox SMS
+description: Python ile geliştirilmiş güvenli SMS altyapısı
+theme: jekyll-theme-cayman
+baseurl: "/zrox-sms"
+url: "https://py3lxx.github.io" 
