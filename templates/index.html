@@ -117,6 +117,38 @@
         <p>%100 Python ile geliştirilmiştir.</p>
     </footer>
 
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Notification Container -->
+    <div class="notification-container"></div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Ara... (Ctrl + K)">
+        </div>
+    </div>
+
+    <!-- Keyboard Shortcuts Guide -->
+    <div class="shortcuts-guide">
+        <h3>Klavye Kısayolları</h3>
+        <div class="shortcut-item">
+            <span class="key">Ctrl + K</span>
+            <span>Arama</span>
+        </div>
+        <div class="shortcut-item">
+            <span class="key">Ctrl + /</span>
+            <span>Kısayollar</span>
+        </div>
+        <div class="shortcut-item">
+            <span class="key">ESC</span>
+            <span>Kapat</span>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
