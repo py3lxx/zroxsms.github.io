@@ -38,78 +38,15 @@
     </header>
 
     <section class="features" id="features">
-        <h2>Özellikler</h2>
-        <div class="feature-grid">
-            {% for feature in features %}
-            <div class="feature-card">
-                <i class="fas {{ feature.icon }}"></i>
-                <h3>{{ feature.title }}</h3>
-                <p>{{ feature.description }}</p>
-            </div>
-            {% endfor %}
-        </div>
+        <!-- Features section içeriği -->
     </section>
 
     <section class="download" id="download">
-        <h2>Hemen İndirin</h2>
-        <div class="download-box">
-            <div class="version-info">
-                <p>Son Versiyon: v1.0.0</p>
-                <p>Boyut: 38 MB</p>
-                <p>Python 3.8+ gerektirir</p>
-            </div>
-            <a href="https://dosya.co/79fm20qmqgt8/Zrox_SMS.zip.html" target="_blank" class="btn primary">
-                <i class="fas fa-download"></i> İNDİR
-            </a>
-        </div>
+        <!-- Download section içeriği -->
     </section>
-
-    <section class="screenshots" id="screenshots">
-        <h2>Ekran Görüntüleri</h2>
-        <div class="screenshot-grid">
-            <div class="screenshot-item">
-                <img src="{{ url_for('static', filename='img/screenshots/screen1.png') }}" 
-                     alt="Zrox SMS Arayüzü"
-                     onclick="openImageModal(this.src)"
-                     loading="lazy">
-                <p>Giriş</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="{{ url_for('static', filename='img/screenshots/screen2.png') }}"
-                     alt="SMS Gönderme Ekranı"
-                     onclick="openImageModal(this.src)"
-                     loading="lazy">
-                <p>Karşılama</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="{{ url_for('static', filename='img/screenshots/screen3.png') }}"
-                     alt="Menü Ekranı"
-                     onclick="openImageModal(this.src)"
-                     loading="lazy">
-                <p>Menü</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close-modal">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
 
     <section class="contact" id="contact">
-        <h2>Abonelik Al</h2>
-        <div class="contact-box">
-            <p>Abonelik satın almak için aşağıdaki platformlardan bize ulaşın:</p>
-            <div class="social-links">
-                <a href="https://discord.com/users/lovnzb08" class="btn discord" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-discord"></i> Discord: lovnzb08
-                </a>
-                <a href="https://t.me/lovnzb08" class="btn telegram" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-telegram"></i> Telegram: lovnzb08
-                </a>
-            </div>
-        </div>
+        <!-- Contact section içeriği -->
     </section>
 
     <footer>
@@ -117,39 +54,7 @@
         <p>%100 Python ile geliştirilmiştir.</p>
     </footer>
 
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Notification Container -->
-    <div class="notification-container"></div>
-
-    <!-- Search Bar -->
-    <div class="search-container">
-        <div class="search-box">
-            <input type="text" class="search-input" placeholder="Ara... (Ctrl + K)">
-        </div>
-    </div>
-
-    <!-- Keyboard Shortcuts Guide -->
-    <div class="shortcuts-guide">
-        <h3>Klavye Kısayolları</h3>
-        <div class="shortcut-item">
-            <span class="key">Ctrl + K</span>
-            <span>Arama</span>
-        </div>
-        <div class="shortcut-item">
-            <span class="key">Ctrl + /</span>
-            <span>Kısayollar</span>
-        </div>
-        <div class="shortcut-item">
-            <span class="key">ESC</span>
-            <span>Kapat</span>
-        </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="static/js/main.js"></script>
 </body>
 </html> 
