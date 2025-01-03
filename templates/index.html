@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zrox SMS - Güvenli ve Anonim SMS Bomber</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='icon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="particles-container" id="particles-js"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="code-text">&lt;</span>
+                Zrox SMS
+                <span class="code-text">/&gt;</span>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h1>Zrox SMS</h1>
+            <p class="subtitle">Python ile Geliştirilmiş Güvenli SMS Altyapısı</p>
+            <div class="cta-buttons">
+                <a href="#download" class="btn primary">
+                    <i class="fas fa-download"></i> İNDİR
+                </a>
+                <a href="#contact" class="btn secondary">
+                    <i class="fas fa-shopping-cart"></i> ABONELİK AL
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Diğer bölümler aynı kalacak -->
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
