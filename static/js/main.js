@@ -173,34 +173,6 @@ scrollTop.addEventListener('click', () => {
     });
 });
 
-// Loading Screen
-document.addEventListener('DOMContentLoaded', () => {
-    const loadingScreen = document.querySelector('.loading-screen');
-    
-    // Sayfa yüklendikten 1.5 saniye sonra loading screen'i kaldır
-    setTimeout(() => {
-        loadingScreen.style.opacity = '0';
-        loadingScreen.style.visibility = 'hidden';
-        
-        // Loading screen tamamen kaybolduğunda DOM'dan kaldır
-        setTimeout(() => {
-            loadingScreen.remove();
-        }, 500);
-    }, 1500);
-});
-
-// Eğer sayfa yüklenme 4 saniyeden uzun sürerse loading screen'i zorla kaldır
-setTimeout(() => {
-    const loadingScreen = document.querySelector('.loading-screen');
-    if (loadingScreen) {
-        loadingScreen.style.opacity = '0';
-        loadingScreen.style.visibility = 'hidden';
-        setTimeout(() => {
-            loadingScreen.remove();
-        }, 500);
-    }
-}, 4000);
-
 // Notification System
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
