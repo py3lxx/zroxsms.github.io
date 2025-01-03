@@ -755,10 +755,55 @@ footer p:last-child {
     .social-links {
         flex-direction: column;
         gap: 1rem;
+        width: 100%;
+        padding: 0 1rem;
     }
 
     .social-links .btn {
         width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .contact-box {
+        margin: 1rem;
+        padding: 1.5rem;
+        width: auto;
+    }
+
+    .contact-box p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    /* Discord ve Telegram butonları */
+    .discord, .telegram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .social-links .btn i {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+
+    /* Contact section padding */
+    .contact {
+        padding: 3rem 1rem;
+    }
+
+    /* Contact box shadow ve border */
+    .contact-box {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
     }
 
     /* Modal */
